@@ -1,0 +1,150 @@
+:root {
+  --main-color: #2196f3;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+}
+.game {
+  background-color: #eee;
+  min-height: 100vh;
+}
+.container {
+  margin: auto;
+  max-width: 900px;
+}
+.name {
+  background-color: var(--main-color);
+  color: white;
+  padding: 20px;
+  font-size: 25px;
+  text-align: center;
+  font-weight: bold;
+}
+.message {
+  background-color: white;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 6px;
+  text-align: center;
+}
+.message span {
+  font-weight: bold;
+  color: #009688;
+}
+.message span::before {
+  content: "[ ";
+}
+.message span::after {
+  content: " ]";
+}
+.box {
+  margin: 20px 0 0 calc(50% - 125px);
+}
+.box select {
+  background-color: var(--main-color);
+  color: white;
+  padding: 12px;
+  font-weight: bold;
+  width: 250px;
+  border: none;
+  font-size: 20px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+  -webkit-appearance: button;
+  appearance: button;
+  outline: none;
+  padding: 12px;
+}
+.box select option {
+  padding: 30px;
+}
+.start {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  background-color: #009688;
+  color: white;
+  padding: 20px;
+  cursor: pointer;
+}
+.the-word {
+  text-align: center;
+  font-weight: bold;
+  font-size: 50px;
+  color: var(--main-color);
+  user-select: none;
+}
+.input {
+  margin: 10px 0;
+  width: 100%;
+  display: block;
+  padding: 15px;
+  border: 3px solid var(--main-color);
+  font-size: 20px;
+  text-align: center;
+  text-transform: capitalize;
+  border-radius: 6px;
+  caret-color: var(--main-color);
+}
+.input:focus {
+  outline: none;
+}
+.upcoming-words {
+  background-color: white;
+  margin: 15px 0;
+  padding: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.upcoming-words div {
+  background-color: var(--main-color);
+  color: white;
+  font-weight: bold;
+  margin: 4px;
+  padding: 10px;
+  border-radius: 6px;
+}
+.control {
+  display: flex;
+  justify-content: space-around;
+  background-color: white;
+  padding: 10px;
+}
+.control span {
+  font-weight: bold;
+  color: #009688;
+}
+.control .score {
+  margin-left: 25px;
+}
+.finish {
+  font-weight: bold;
+  font-size: 40px;
+  text-align: center;
+  /* padding: 10px; */
+}
+.finish .good {
+  color: #009688;
+}
+.finish .bad {
+  color: red;
+}
+.again {
+  color: var(--main-color);
+  padding: 15px;
+  background-color: #009688;
+  width: fit-content;
+  margin: 10px auto;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+  cursor: pointer;
+  border-radius: 7px;
+}
